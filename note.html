@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>CMY note</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style2.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+    <!-- 代码高亮 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+
+    <style>
+        .custom-code-block {
+            max-width: 900px;
+            /* 设置最大宽度 */
+            margin: 0 auto;
+            /* 水平居中 */
+            border-radius: 10px;
+            /* 设置弧形边框 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* 添加阴影效果 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>welcome</h3>
+            </div>
+
+            <ul class="list-unstyled components">
+                <p>目录</p>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">HTML</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#html1">基本结构</a>
+                        </li>
+                        <li>
+                            <a href="#html2">标签与元素</a>
+                        </li>
+                        <li>
+                            <a href="#html3">表单与输入</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#page1Submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">css</a>
+                    <ul class="collapse list-unstyled" id="page1Submenu">
+                        <li>
+                            <a href="#">选择器与样式规则</a>
+                        </li>
+                        <li>
+                            <a href="#">盒模型与布局</a>
+                        </li>
+                        <li>
+                            <a href="#">flexbox与Grid布局</a>
+                        </li>
+                        <li>
+                            <a href="#">响应式设计</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">js</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">变量与数据类型</a>
+                        </li>
+                        <li>
+                            <a href="#">条件语句与循环</a>
+                        </li>
+                        <li>
+                            <a href="#">函数与作用域</a>
+                        </li>
+                        <li>
+                            <a href="#">Dom操作</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#over">学习心得</a>
+                </li>
+
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="#" class="download">下载文档</a>
+                </li>
+                <li>
+                    <a href="index.html" class="article">首页</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Toggle Sidebar</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">主页</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="chatdemo/chatdemo/chat.html">AI小助手</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <h2>HTML</h2>
+            <p>HTML（HyperText Markup
+                Language）是一种用于创建和设计网页结构的标记语言。它由一系列的元素（elements）组成，这些元素通过标签（tags）定义，每个标签包裹着不同的内容，起到不同的作用。HTML 是 Web
+                开发中的基础，用于描述和定义页面的结构和内容。</p>
+
+            <div id="html1">
+                <h3 style="font-size: 1.3em;">基本结构</h3>
+                <p>HTML 文档的基本结构由以下部分组成：</p>
+                <div class="custom-code-block">
+                    <pre><code class="language-html">
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="en"&gt;
+                &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                    &lt;title&gt;My Web Page&lt;/title&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;h1&gt;Hello, Prism.js!&lt;/h1&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+                </code></pre>
+                </div>
+            </div>
+            <div class="line"></div>
+
+            <div id="html2">
+                <h3 style="font-size: 1.3em;">标签与元素</h3>
+                <p>HTML 中使用标签来创建元素，一些常见的标签和元素包括：</p>
+                <div class="custom-code-block">
+                    <pre><code class="language-html">
+                    &lt;!-- 段落 --&gt;
+                    &lt;p&gt;这是一个段落&lt;/p&gt;
+                    
+                    &lt;!-- 标题 --&gt;
+                    &lt;h1&gt;这是一级标题&lt;/h1&gt;
+                    
+                    &lt;!-- 超链接 --&gt;
+                    &lt;a href="https://www.example.com"&gt;这是一个链接&lt;/a&gt;
+                    
+                    &lt;!-- 图像 --&gt;
+                    &lt;img src="image.jpg" alt="图片描述"&gt;
+                    
+                    &lt;!-- 列表 --&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;无序列表项&lt;/li&gt;
+                        &lt;li&gt;无序列表项&lt;/li&gt;
+                    &lt;/ul&gt;
+                    
+                    &lt;ol&gt;
+                        &lt;li&gt;有序列表项&lt;/li&gt;
+                        &lt;li&gt;有序列表项&lt;/li&gt;
+                    &lt;/ol&gt;
+                        </code></pre>
+                </div>
+            </div>
+            <div class="line"></div>
+
+            <div id="html3">
+                <h3 style="font-size: 1.3em;">表单与输入</h3>
+                <p>HTML 表单用于收集用户输入，包括输入框、按钮等元素：</p>
+                <div class="custom-code-block">
+                    <pre><code class="language-html">
+                    &lt;audio controls&gt;
+                        &lt;source src="audio.mp3" type="audio/mp3"&gt;
+                        Your browser does not support the audio tag.
+                    &lt;/audio&gt;
+                    
+                    &lt;video width="320" height="240" controls&gt;
+                        &lt;source src="video.mp4" type="video/mp4"&gt;
+                        Your browser does not support the video tag.
+                    &lt;/video&gt;
+                        </code></pre>
+                </div>
+                <p>form：定义表单</p>
+                <p>label：定义输入框标签</p>
+                <p>input：定义输入框，type 属性指定输入框类型，如文本、密码等。</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+
+            <div class="line"></div>
+            <h2>Lorem Ipsum Dolor</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+
+            <div class="line"></div>
+
+            <h3>Lorem Ipsum Dolor</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+            <div class="line"></div>
+
+            <div id="over">
+                <h2>学习心得</h2>
+                <p>在这个数字化时代，网页设计作为一项重要的技能逐渐受到人们的关注。对于初学者而言，掌握网页设计可能是一项看似艰巨的任务。然而，正是在这样的学习过程中，一个人可以从无知到拥有技能，从迷茫到自信。</p>
+                <p>刚接触前端时，面对一系列陌生的标签、样式和脚本，我产生了浓厚的好奇心和兴趣。决心要深入学习前端开发，我开始踏上这个新领域的学习之旅。课堂学习只是前端知识的冰山一角，真正的理解和掌握需要通过实际操作。在课外时间，我积极参与小型项目，从实际问题中学到了许多解决方法，对前端的各个方面有了更深刻的认识。
+                </p>
+                <p>虽然一开始有些吃力，但通过不断的实践和尝试，我发现网页设计并不是遥不可及的。现在，我能够创造简单而具有吸引力的页面，这让我感到非常满足和充实。这段初学者的心得告诉我，只要持续学习，每一步都有值得发现和体会的乐趣。
+                </p>
+                <div class="line"></div>
+            </div>
+
+
+        </div>
+
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+            integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+            crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+            integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+            crossorigin="anonymous"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                });
+            });
+        </script>
+</body>
+
+</html>
